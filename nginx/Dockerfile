@@ -28,6 +28,6 @@ RUN chown -R cohesity:cohesity /usr/share/nginx
 
 USER cohesity
 
-EXPOSE 80 443
+EXPOSE 443
 
 CMD ["nginx", "-g", "daemon off;"]
