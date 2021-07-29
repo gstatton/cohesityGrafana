@@ -2,7 +2,7 @@
 FROM nginx:1.21.1-alpine
 
 #add bash
-RUN apk add bash
+RUN apk --no-cache add bash=5.1.4-r0
 
 # refresh apk repos and get latest
 RUN apk -U upgrade && rm -rf /var/cache/apk/*
