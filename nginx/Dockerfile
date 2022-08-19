@@ -1,5 +1,5 @@
 # Build image from nginx alpine image
-FROM nginx:1.21.1-alpine
+FROM nginx:stable-alpine
 
 #copy ssl certificate
 COPY ./certificate.crt /etc/ssl/certs/
