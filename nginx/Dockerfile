@@ -2,10 +2,10 @@
 FROM nginx:stable-alpine
 
 #copy ssl certificate
-COPY ./certificate.crt /etc/ssl/certs/
+COPY ./certs/certificate.crt /etc/ssl/certs/
 
 #copy ssl private key
-COPY ./nginx-private.key /etc/ssl/private/
+COPY ./certs/nginx-private.key /etc/ssl/private/
 
 # copy nginx conf
 COPY ./nginx.conf /etc/nginx/
